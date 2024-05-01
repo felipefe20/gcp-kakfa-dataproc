@@ -4,9 +4,16 @@ from pyspark.sql.types import StructType, StructField, StringType
 from config import config
 import sys
 
-kafkaAPIKey=sys.argv[1]
-kafkaAPISecret=sys.argv[2]
-kafkaBootsrapServers=sys.argv[3]
+
+
+#kafkaAPIKey=sys.argv[1]
+kafkaAPISecret=sys.argv[1]
+kafkaBootsrapServers=sys.argv[2]
+
+print("Arguments:")
+print(f"kafkaBrokerAndPortCSV={kafkaBootsrapServers}")
+#print(f"kafkaAPIKey={kafkaAPIKey}")
+print(f"kafkaAPISecret={kafkaAPISecret}")
 
 # Variables
 kafkaJaasConfig="org.apache.kafka.common.security.plain.PlainLoginModule required username=\"" + kafkaAPIKey + "\" password=\"" + kafkaAPISecret + "\";"
