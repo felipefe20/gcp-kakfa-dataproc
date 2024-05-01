@@ -6,13 +6,13 @@ import sys
 
 
 
-#kafkaAPIKey=sys.argv[1]
-kafkaAPISecret=sys.argv[1]
-kafkaBootsrapServers=sys.argv[2]
+kafkaAPIKey=sys.argv[1]
+kafkaAPISecret=sys.argv[2]
+kafkaBootsrapServers=sys.argv[3]
 
 print("Arguments:")
 print(f"kafkaBrokerAndPortCSV={kafkaBootsrapServers}")
-#print(f"kafkaAPIKey={kafkaAPIKey}")
+print(f"kafkaAPIKey={kafkaAPIKey}")
 print(f"kafkaAPISecret={kafkaAPISecret}")
 
 # Variables
