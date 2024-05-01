@@ -1,12 +1,18 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import from_json, col
 from pyspark.sql.types import StructType, StructField, StringType
+from config import config
+import sys
 
+kafkaAPIKey=sys.argv[1]
+kafkaAPISecret=sys.argv[2]
+kafkaBootsrapServers=sys.argv[3]
 
+# Variables
 kafkaJaasConfig="org.apache.kafka.common.security.plain.PlainLoginModule required username=\"" + kafkaAPIKey + "\" password=\"" + kafkaAPISecret + "\";"
 
 # Variables
-kafkaTopic="entries"
+kafkaTopic="gcp-confluent-topic-1"
 
 # Define the schema of your data
 schema = StructType([
@@ -21,15 +27,18 @@ schema = StructType([
 
 # Create a SparkSession
 spark = SparkSession.builder \
-    .appName("KafkaStreamProcessor") \
+    .appName("entries-consumer") \
     .getOrCreate()
 
-# Read the Kafka stream
-df = spark \
-    .readStream \
-    .format("kafka") \
-    .option("kafka.bootstrap.servers", "localhost:9092") \
-    .option("subscribe", "gcp-confluent-topic-1") \
+# Read from Kafka topic
+df = spark.readStream.format("kafka") \
+    .option("kafka.bootstrap.servers", kafkaBootsrapServers) \
+    .option("subscribe", kafkaTopic) \
+    .option("kafka.security.protocol", "SASL_SSL") \
+    .option("kafka.sasl.mechanism", "PLAIN") \
+    .option("kafka.sasl.jaas.config", kafkaJaasConfig) \
+    .option("startingOffsets", "earliest") \
+    .option("failOnDataLoss", "true") \
     .load()
 
 # Convert the binary value column to string
