@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "resounding-hope-414923",
+    "private_key_id": "c0a973ccf5b90b9ab5ce5f2ad23f63cdba397dae",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDsU1H+c2NDOhuQ\nzIvwE13tsVROMTDksRPnvkuRCOHOzjYdwujz6fs6D/dsDDhA6aweevX5GMmQ13u6\ntmVKsUdFsLXXHischUPU2moEziv5R9v5+6MyrEoMCqsGOhEm8vt5nmkyxRr9I5CY\nJ4vFhIY+sotqenjGUri3xdrhyqoXNLib9dF83na9MyIIq9yqMl6yW0V3ib+YlBBN\n1dKGVJRYEbtDEZXhvdnZWqlb4txW8CL6ZttofSczymiJ/ELGKdd1IgD8NZ8TKHE5\ndUNU4+2TJTkhialgFlfQXxwoXx14GJzgO9icYhDW3150XpcQ2RmhUDOe6wqGPKft\nM8piM3lPAgMBAAECggEAagK0UM7FE9agn/NJwN+HLoVyGoNRefz/P2ErN7vCw4jY\nWMBizGvFARZBeKwAngnUZnXlGiEm5jzraWXBiWB95sKux3lmgGw9ceGqVk6ABlpY\nUMqzOht0OfOdJXVt1UmBSlyntxkZEr3d8osm1Wst5zkjdhfLTrez2eg82DWX2EE2\n8pLZ0oBeMEgYmwh/1U0yS25KMNx3kih4pZWvNsBJoUkJr6I5RwyF21Y5sj79HlT6\nOk8WXGs3q2kptgKAXS/G2u2xqBddnrYWIh66RtNhaQHukL6V2CV9L3Otr4zLOCkj\nwhin75H7H9DgOh+mW3NjoAZAXuz5JWbEonODxcu/kQKBgQD3/HwZ5a84F5mx0gCP\nfiokHWTS1I8fKyMUWOINNVJJtHd9XQqltxWi719v3kZcvFJSyB99pVN3XB1g81Ts\nSjkNBtiprRypdbdmDT9FPWwE7nx0lAk7L9m8kPGUjZFVpu5yrGrS0niEUq7YVZoD\nHx06K5rfDTj0wXDON7F+EOXlfwKBgQDz9l6IKyFtjQKTEN8Y7RmFnfLTAYYh8rhc\nRTgRnIu9D4OXvJqx7b8zLNcQirlOMl5hPeoHY2w/3/VmcUOrAYlQZ6M2/ufvsoI0\nNzkpwu9QbN1VIh5aLhDJBp5XPkTriHNMkPG1ISu6Od4M/jAwzbuwehgFxh5kw4ew\nVfOEQkt0MQKBgQCEUdOCGf1Bh845hJ1J837W4FxA5qwrbF/+ZmLPu2jZ7RJo8PFS\ndPt1ghZBYa/XoaCnjSLIbyO3J46BgbUJk50XZ1TKTJVjkm02ZdEhx+FQTFRZ+/dk\n/mZG6GwO4O7wbe8Dfx5MuYMWz+t9gUd5bOuyczvi0nJWnrTrQ+pQIwIYTwKBgAfu\nw+YjmOOqCSJlEwwJcaIBn8qyqvzhmpMNgSQ5deXA4mOFs3YDqAru81NLX3kmdCEv\nVTPGTNfK3XzmQ/AEjcV6iTkZkssdf9RY01gDSarQz2WcRWZjRxJyT6XAlZcfCbi8\noc9k87oLdafwf/qmResYHT3a0lQuc3QNZ2yuhyuRAoGBAOUl0juOrSM2oTnY1Vio\n5Vn865cFY2wbXVD6olC/EwcqnQRn9VslqLsnfYA9Uv1U9oKH651y4J3ivFv5WPQB\n2MZE3V/vfJQ6KgNN2n1GhyIGYgzYqDWIrAjw7aQu6P2B3OY74vXzj3V4AveyjvJi\n1u3Sc4A3YNoLVsGd1AfzALO/\n-----END PRIVATE KEY-----\n",
+    "client_email": "terraform-service-account@resounding-hope-414923.iam.gserviceaccount.com",
+    "client_id": "116714936772606483366",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-service-account%40resounding-hope-414923.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
